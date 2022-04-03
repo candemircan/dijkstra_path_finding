@@ -13,7 +13,7 @@ function shortest_paths = shortest_paths_plottable(shortest_paths)
 % shortest_paths    matrix      altered shortest path matrix for plotting
     
     shortest_paths = triu(shortest_paths); % only take the upper triangle
-    shortest_paths = reshape(shortest_paths,1,[]); % flattent the matrix
+    shortest_paths = reshape(shortest_paths,1,[]); % flatten the matrix
     shortest_paths = nonzeros(shortest_paths); % remove the zeros
 
 end
